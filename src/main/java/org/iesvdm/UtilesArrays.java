@@ -384,13 +384,16 @@ public class UtilesArrays {
             int index = 0;
 
             // Mientras no haya un elemento diferente y no sobrepase la longitud del array aumentamos el contador
-            while((elementosIguales(array1, array2, index) == true) && index < array1.length)
+
+            //while((elementosIguales(array1, array2, index) == true) && index < array1.length)
+            while(index < array1.length && elementosIguales(array1, array2, index))
             {
                 index++;
             }
 
             // Si el contador ha llegado a la ultima posición es que son iguales
-            if(index ==  array1.length-1)
+            //if(index ==  array1.length-1)
+            if(index ==  array1.length)
             {
                 iguales = true;
             }
